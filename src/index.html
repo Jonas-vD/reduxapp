@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <include src="./symbol-defs.svg"></include>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#zoneNews">News</a></li>
+          <li><a href="#zoneMusic">Songs</a></li>
+          <li><a href="#zonePhoto">Photos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <section>
+          <div id="zoneNews" class="zoneNews">
+            <div class="titel">
+              <span class="icons">
+                <svg class="icon icon-newspaper">
+                  <use href="#icon-newspaper" />
+                </svg>
+              </span>
+              <h2><span>Todays</span>&nbsp;Headlines</h2>
+            </div>
+          </div>
+          <div id="zoneMusic" class="zoneMusic">
+            <div class="titel">
+              <span class="icons">
+                <svg class="icon icon-headphones">
+                  <use href="#icon-headphones" />
+                </svg>
+              </span>
+              <h2><span>Trending</span>&nbsp;Songs</h2>
+            </div>
+          </div>
+          <div id="zonePhoto" class="zonePhoto">
+            <div class="titel">
+              <span class="icons">
+                <svg class="icon icon-image">
+                  <use href="#icon-image" />
+                </svg>
+              </span>
+              <h2><span>The&nbsp;Latest</span>&nbsp;Pictures</h2>
+            </div>
+          </div>
+        </section>
+        <aside class="zoneLiked">
+          <div class="titel">
+            <span class="icons">
+              <svg class="icon icon-like">
+                <use href="#icon-like" />
+              </svg>
+            </span>
+            <h2><span>Liked&nbsp;</span>items</h2>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+.songitems,
+.likeditems {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  .songitem {
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+
+    .audio {
+      width: 90%;
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+      audio {
+        width: 100%;
+      }
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin-right: 20px;
+    }
+  }
+}
+.songitems {
+  position: relative;
+  padding-bottom: 80px;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    background-color: #033e8c;
+  }
+}
+
+.likeditems {
+  .btn__trash {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 1.6rem;
+    border: 1px solid #d9a441;
+    color: #d9a441;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms;
+    &:hover {
+      transform: scale(1.2);
+      // color: white;
+    }
+    svg {
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+.icon-library {
+  width: 1.0625em;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Urbanist";
+}
+h2 {
+  font-size: 2rem;
+  color: peru;
+  width: 100%;
+  margin-bottom: 20px;
+}
+h2 .icons {
+  background-color: #d9a441;
+  color: white;
+  font-size: 2.6rem;
+  border-radius: 50%;
+  height: 100px;
+  margin-right: 25px;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 50px;
+}
+.container h1 {
+  color: orange;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #034c8c;
+  position: relative;
+}
+.container h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #d9a441;
+  top: 50px;
+  left: calc(50% - 25px);
+}
+.container main {
+  display: flex;
+  justify-content: space-between;
+}
+.container main section {
+  background-color: white;
+  padding: 10px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container main section .zoneNews {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.container main section .zoneMusic {
+  background-color: yellow;
+}
+.container main section .zonePhoto {
+  background-color: blue;
+}
+.container aside {
+  background-color: rgba(3, 76, 140, 0.1);
+  width: 30%;
+  margin-left: 30px;
+  padding: 10px;
+}
+.container aside .likeZone {
+  background-color: rebeccapurple;
+}
+.newsitem {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.1);
+  width: calc(33% - 20px);
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 15px;
+}
+.newsitem .datum {
+  font-size: 1.4rem;
+  font-weight: 200;
+  font-style: italic;
+  margin-bottom: 5px;
+  color: #d9a441;
+}
+.newsitem h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #034c8c;
+  line-height: 2.2rem;
+}
+.newsitem p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: black;
+  text-align: justify;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+.newsitem span {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  color: #55b3d9;
+  transition: all 300ms;
+}
+.newsitem span .icon {
+  margin-left: 5px;
+  font-size: 1.4rem;
+}
+.newsitem span:hover {
+  color: #033e8c;
+}
+.songitem {
+  display: flex;
+  align-items: center;
+}
+.songitem audio {
+  width: 100%;
+}
+.songitem img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-right: 20px;
+}
+/*# sourceMappingURL=index.62239883.css.map */

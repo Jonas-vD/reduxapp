@@ -1,0 +1,114 @@
+.newsitems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  transition: all 300ms;
+  padding-bottom: 40px;
+  .newsitem {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+    position: relative;
+    padding: 15px;
+    transition: all 300ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+      transform: translateY(-3px);
+    }
+
+    .newsitem__datum {
+      font-size: 1.4rem;
+      font-weight: 200;
+      font-style: italic;
+      margin-bottom: 15px;
+      color: #d9a441;
+    }
+    .newsitem__image {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #034c8c;
+      line-height: 2.2rem;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      font-weight: 300;
+      margin-bottom: auto;
+      color: black;
+      text-align: justify;
+      hyphens: auto;
+    }
+    a {
+      text-decoration: none;
+      margin-top: 30px;
+      span {
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        color: #55b3d9;
+        transition: all 300ms;
+
+        .newsitem__icon {
+          margin-left: 5px;
+          font-size: 1.4rem;
+          display: flex;
+          align-items: center;
+        }
+        &:hover {
+          color: #033e8c;
+        }
+      }
+    }
+  }
+  .item0,
+  .item3 {
+    grid-column: span 2;
+  }
+  .item3 {
+    .newsitem__image {
+      height: 325px;
+    }
+  }
+}
+.newsitems {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    background-color: #033e8c;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .newsitems {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    .item0,
+    .item3 {
+      grid-column: unset;
+    }
+    .item3 {
+      .newsitem__image {
+        height: 200px;
+      }
+    }
+  }
+}
