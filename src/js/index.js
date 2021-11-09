@@ -12,3 +12,15 @@ const holderLikes = document.querySelector(".zoneLiked");
 new Newsarticle(holderNews, holderLikes);
 new Song(holderMusic, holderLikes);
 new Photo(holderPhoto, holderLikes);
+
+const btnMobile = document.querySelector(".mobile__menu");
+const mobileMenu = document.querySelector(".mobile__menu__dropdown");
+const btnCloseMobile = document.querySelector(".btn__close");
+
+btnMobile.onclick = (e) => {
+  mobileMenu.style.display = "block";
+};
+
+btnCloseMobile.onclick = (e) => {
+  mobileMenu.style.display = "none";
+};

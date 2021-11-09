@@ -8,6 +8,28 @@
   </head>
   <body>
     <include src="./symbol-defs.svg"></include>
+    <button class="mobile__menu">
+      <p>MENU</p>
+      <span>
+        <svg class="icon icon-menu">
+          <use href="#icon-menu" />
+        </svg>
+      </span>
+    </button>
+    <div class="mobile__menu__dropdown">
+      <span class="btn__close">
+        <svg class="icon icon-plus">
+          <use href="#icon-plus" />
+        </svg>
+      </span>
+      <ul>
+        <li><a href="#zoneNews">News</a></li>
+        <li><a href="#zoneMusic">Songs</a></li>
+        <li><a href="#zonePhoto">Photos</a></li>
+        <li><a href="#zoneLiked">Likes</a></li>
+      </ul>
+    </div>
+
     <header>
       <nav>
         <ul>

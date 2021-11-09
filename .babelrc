@@ -1,6 +1,0 @@
-{
-    "presets": [
-      ["@babel/preset-env", {"targets": {"browsers": "last 1 Chrome versions"}}]
-    ],
-    "plugins": ["@babel/plugin-proposal-class-properties"]
-}
