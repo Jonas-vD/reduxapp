@@ -29,12 +29,17 @@ header {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    transition: all 300ms;
     ul {
       li {
+        transition: all 300ms;
         display: inline-block;
         a {
           padding: 10px 25px;
           display: flex;
+          transition: all 300ms;
           text-decoration: none;
           border-radius: 60px;
           margin-right: 20px;
@@ -49,6 +54,9 @@ header {
           &:active {
             background-color: $gold;
           }
+        }
+        &:last-of-type {
+          display: none;
         }
       }
     }
@@ -122,14 +130,13 @@ header {
       width: 70%;
       display: flex;
       flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-between;
 
       .zoneNews {
         padding-bottom: 50px;
       }
       .zoneMusic {
         padding-bottom: 50px;
+        width: 100%;
 
         & .songitem {
           & .btn__like,
@@ -140,6 +147,7 @@ header {
       }
       .zonePhoto {
         padding-bottom: 50px;
+        width: 100%;
       }
       .btn__like,
       .btn__trash {
@@ -181,11 +189,12 @@ header {
   }
   aside {
     transition: all 300ms;
-    width: 30%;
+    width: 40%;
     border: 1px solid $gold;
     margin-left: 30px;
     padding: 10px 20px;
     border-radius: 25px;
+    height: fit-content;
   }
 }
 
@@ -228,6 +237,24 @@ header {
   body {
     padding: 0;
   }
+  header {
+    nav {
+      margin: 0 auto;
+      width: 95%;
+      max-width: 1200px;
+      justify-content: center;
+      ul {
+        li {
+          &:last-of-type {
+            display: inline-block;
+            a {
+              margin-right: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
   .container {
     main {
       flex-wrap: wrap;
@@ -252,6 +279,40 @@ header {
       aside {
         width: 100%;
         margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  header {
+    background-color: $white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    min-height: 75px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 999;
+    box-shadow: 2px 2px 5px rgba(36, 138, 227, 0.1);
+    nav {
+      width: 95%;
+      justify-content: center;
+      ul {
+        li {
+          display: inline-block;
+          a {
+            padding: 10px 15px;
+            margin-right: 10px;
+          }
+          &:last-of-type {
+            display: inline-block;
+            a {
+              margin-right: 0px;
+            }
+          }
+        }
       }
     }
   }
