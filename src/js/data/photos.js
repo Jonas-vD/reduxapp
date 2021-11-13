@@ -5,7 +5,7 @@ const initState = [
     id: nanoid(),
     author: "max-harlynking",
     discription: "Looking right on the ledge of a treehouse",
-    url: new URL(
+    photo: new URL(
       "../../images/max-harlynking-QZx7Fs2B62w-unsplash.jpg",
       import.meta.url
     ),
@@ -15,7 +15,7 @@ const initState = [
     id: nanoid(),
     author: "Gerald Schömbs",
     discription: "Diving with sharks in the Bahamas",
-    url: new URL("../../images/sharksdiving.jpeg", import.meta.url),
+    photo: new URL("../../images/sharksdiving.jpeg", import.meta.url),
     liked: false,
   },
   {
@@ -23,14 +23,14 @@ const initState = [
     author: "Ehimetalor Akhere Unuabona",
     discription:
       "Protests for the launch of the Climate and Ecological Emergency Bill (CEE Bill) Across The City of London",
-    url: new URL("../../images/clown.jpeg", import.meta.url),
+    photo: new URL("../../images/clown.jpeg", import.meta.url),
     liked: false,
   },
   {
     id: nanoid(),
     author: "max-harlynking",
     discription: "Looking right on the ledge of a treehouse",
-    url: new URL(
+    photo: new URL(
       "../../images/max-harlynking-QZx7Fs2B62w-unsplash.jpg",
       import.meta.url
     ),

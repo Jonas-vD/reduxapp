@@ -27,7 +27,7 @@ class Photo {
         return `
           <div data-id="${obj.id}" class="photoitem">
           <div class="container-img">
-          <img src="${obj.url}" alt="">
+          <img src="${obj.photo}" alt="">
           </div>
           <p class="photo__info">${obj.discription}</p>
           <div data-id="${obj.id}" class="btn__like">
