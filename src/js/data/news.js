@@ -10,7 +10,7 @@ const initState = [
       "Politie vindt cannabisplantage in woning naast school: 30 maanden cel geëist",
     introtext:
       "Willebroek - Het Openbaar Ministerie heeft donderdag 30 maanden gevangenisstraf geëist tegen vier mensen die betrokken zouden zijn geweest bij een cannabisplantage in Willebroek. Bij een inval van de politie werd de professionele plantage met 550 cannabisplantjes ontdekt. Opvallend: de woning stond net naast de speelplaats van een school.",
-    url: "https://www.standaard.be/cnt/dmf20211030_93361427",
+    url: "https://www.gva.be/cnt/dmf20211104_95714339#:~:text=Politie%20vindt%20cannabisplantage%20in%20woning%20naast%20school%3A%2030%20maanden%20cel%20ge%C3%ABist&text=Het%20Openbaar%20Ministerie%20heeft%20donderdag,bij%20een%20cannabisplantage%20in%20Willebroek.&text=Opvallend%3A%20de%20woning%20stond%20net%20naast%20de%20speelplaats%20van%20een%20school.",
     liked: false,
   },
   {
@@ -31,7 +31,7 @@ const initState = [
     titel: "Schild van Captain America uit ‘Endgame’ wordt dit weekend geveild",
     introtext:
       "Leuk nieuws voor alle Marvelfans: het schild dat Captain America (Chris Evans) gebruikte in de immens populaire film ‘Avengers: Endgame’ wordt dit weekend geveild.",
-    url: "https://www.standaard.be/cnt/dmf20211030_93361427",
+    url: "https://www.hln.be/film/schild-van-captain-america-uit-endgame-wordt-dit-weekend-geveild~a6a59d70/",
     liked: false,
   },
   {
@@ -42,7 +42,7 @@ const initState = [
     titel: "Stormloop voor Graspop 2022: enkel nog dagtickets verkrijgbaar",
     introtext:
       "De ticketverkoop voor de 25ste editie van Graspop volgend jaar loopt als een trein. Nog geen 24 uur na de start van de verkoop zijn de weekendtickets en de VIP deck tickets allemaal al verkocht. ",
-    url: "https://www.standaard.be/cnt/dmf20211030_93361427",
+    url: "https://www.hln.be/dessel/stormloop-voor-graspop-2022-enkel-nog-dagtickets-verkrijgbaar~a5b8d94b/#:~:text=DesselDe%20ticketverkoop%20voor%20de,deck%20tickets%20allemaal%20al%20verkocht.",
     liked: false,
   },
 ];

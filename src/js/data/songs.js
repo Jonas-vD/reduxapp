@@ -20,6 +20,20 @@ const initState = [
     song: new URL("../../sound/K3-10.000luchtballonnen.mp3", import.meta.url),
     liked: false,
   },
+  {
+    id: nanoid(),
+    titel: "Let It Go",
+    artist: "Disney's Frozen",
+    thumb: new URL(
+      "../../images/Bladmuziek-piano-Let-It-Go-Frozen.jpeg",
+      import.meta.url
+    ),
+    song: new URL(
+      "../../sound/DisneysFrozen_LetItGo_SequencePerformedbyIdinaMenzel.mp3",
+      import.meta.url
+    ),
+    liked: false,
+  },
 ];
 
 const songsReducer = (state = initState, { type, payload }) => {
