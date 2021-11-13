@@ -70,3 +70,15 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .songitems {
+    .songitem {
+      .audio {
+        h3 {
+          width: 75%;
+        }
+      }
+    }
+  }
+}
